@@ -1,176 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Team</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Team</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div>
-        <h1>Real Madrid</h1>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="max-w-4xl mx-auto p-6 space-y-10">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-blue-700">Real Madrid</h1>
     </div>
 
     <div>
-        <h2>Description</h2>
-        <p>Real Madrid is one of the biggest football teams in the world. This simple website is simulating something like football manager. You can Add, and sell football players</p>
+      <h2 class="text-2xl font-semibold mb-2">Description</h2>
+      <p class="text-gray-700">Real Madrid is one of the biggest football teams in the world. This simple website is simulating something like football manager. You can Add, and sell football players.</p>
+    </div>
+
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="text-xl font-semibold mb-2">Your Team Budget</h3>
+      <p class="text-green-600 font-bold text-lg">100 000 000 €</p>
     </div>
 
     <div>
-        <h3>Your Team Budget</h3>
-        <p>100 000 000 €</p>
-    </div>
-
-    <div>
-        <h3>Actual Team</h3>
-        <table border="1">
-        <thead>
-            <tr>
-                <th>Nr</th>
-                <th>Name</th>
-                <th>Last Name</th>
-                <th>Position</th>
-            </tr>
+      <h3 class="text-xl font-semibold mb-2">Actual Team</h3>
+      <table class="min-w-full border border-gray-300 text-sm bg-white shadow rounded">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="py-2 px-4 border">Nr</th>
+            <th class="py-2 px-4 border">Name</th>
+            <th class="py-2 px-4 border">Last Name</th>
+            <th class="py-2 px-4 border">Position</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Thibaut</td>
-                <td>Courtois</td>
-                <td>Goalkeeper</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Daniel</td>
-                <td>Carvajal</td>
-                <td>Right Back</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Eder</td>
-                <td>Militao</td>
-                <td>Center Back</td>
-            </tr>
+          <tr class="text-center">
+            <td class="py-2 px-4 border">1</td>
+            <td class="py-2 px-4 border">Thibaut</td>
+            <td class="py-2 px-4 border">Courtois</td>
+            <td class="py-2 px-4 border">Goalkeeper</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="py-2 px-4 border">2</td>
+            <td class="py-2 px-4 border">Daniel</td>
+            <td class="py-2 px-4 border">Carvajal</td>
+            <td class="py-2 px-4 border">Right Back</td>
+          </tr>
+          <tr class="text-center">
+            <td class="py-2 px-4 border">3</td>
+            <td class="py-2 px-4 border">Eder</td>
+            <td class="py-2 px-4 border">Militao</td>
+            <td class="py-2 px-4 border">Center Back</td>
+          </tr>
         </tbody>
-        </table>
+      </table>
     </div>
 
     <div>
-        <h3>Incoming Transfers</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nr</th>
-                    <th>Name</th>
-                    <th>Last Name</th>
-                    <th>Position</th>
-                    <th>Price</th>
-                    <th>Team</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Trent</td>
-                    <td>Alexander-Arnold</td>
-                    <td>Right Back</td>
-                    <td>0 €</td>
-                    <td>Liverpool FC</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Dean</td>
-                    <td>Huijsen</td>
-                    <td>Center Back</td>
-                    <td>58 472 500 €</td>
-                    <td>A.F.C Bournemouth</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Franco</td>
-                    <td>Mastantuono</td>
-                    <td>Midfielder</td>
-                    <td>45 000 000 €</td>
-                    <td>River Plate</td>
-                </tr>
-            </tbody>
-        </table>
+      <h3 class="text-xl font-semibold mb-2">Incoming Transfers</h3>
+      <table class="min-w-full border border-gray-300 text-sm bg-white shadow rounded">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="py-2 px-4 border">Nr</th>
+            <th class="py-2 px-4 border">Name</th>
+            <th class="py-2 px-4 border">Last Name</th>
+            <th class="py-2 px-4 border">Position</th>
+            <th class="py-2 px-4 border">Price</th>
+            <th class="py-2 px-4 border">Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="py-2 px-4 border">1</td>
+            <td class="py-2 px-4 border">Trent</td>
+            <td class="py-2 px-4 border">Alexander-Arnold</td>
+            <td class="py-2 px-4 border">Right Back</td>
+            <td class="py-2 px-4 border">0 €</td>
+            <td class="py-2 px-4 border">Liverpool FC</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="py-2 px-4 border">2</td>
+            <td class="py-2 px-4 border">Dean</td>
+            <td class="py-2 px-4 border">Huijsen</td>
+            <td class="py-2 px-4 border">Center Back</td>
+            <td class="py-2 px-4 border">58 472 500 €</td>
+            <td class="py-2 px-4 border">A.F.C Bournemouth</td>
+          </tr>
+          <tr class="text-center">
+            <td class="py-2 px-4 border">3</td>
+            <td class="py-2 px-4 border">Franco</td>
+            <td class="py-2 px-4 border">Mastantuono</td>
+            <td class="py-2 px-4 border">Midfielder</td>
+            <td class="py-2 px-4 border">45 000 000 €</td>
+            <td class="py-2 px-4 border">River Plate</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div>
-        <h3>Outgoing Transfers</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nr</th>
-                    <th>Name</th>
-                    <th>Last Name</th>
-                    <th>Position</th>
-                    <th>Price</th>
-                    <th>Team</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Luka</td>
-                    <td>Modric</td>
-                    <td>Midfielder</td>
-                    <td>0 €</td>
-                    <td>AC Milan</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div>
-        <h3>Delete or Edit Player</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname"><br><br>
-            <label for="position">Position:</label>
-            <input type="text" id="position" name="position"><br><br>
-            <label for="price">Price:</label>
-            <input type="text" id="price" name="price"><br><br>
-            <label for="team">Team:</label>
-            <input type="text" id="team" name="team"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+      <h3 class="text-xl font-semibold mb-2">Outgoing Transfers</h3>
+      <table class="min-w-full border border-gray-300 text-sm bg-white shadow rounded">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="py-2 px-4 border">Nr</th>
+            <th class="py-2 px-4 border">Name</th>
+            <th class="py-2 px-4 border">Last Name</th>
+            <th class="py-2 px-4 border">Position</th>
+            <th class="py-2 px-4 border">Price</th>
+            <th class="py-2 px-4 border">Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="py-2 px-4 border">1</td>
+            <td class="py-2 px-4 border">Luka</td>
+            <td class="py-2 px-4 border">Modric</td>
+            <td class="py-2 px-4 border">Midfielder</td>
+            <td class="py-2 px-4 border">0 €</td>
+            <td class="py-2 px-4 border">AC Milan</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div>
-        <h3>Buy Player</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname"><br><br>
-            <label for="position">Position:</label>
-            <input type="text" id="position" name="position"><br><br>
-            <label for="price">Price:</label>
-            <input type="text" id="price" name="price"><br><br>
-            <label for="team">Team:</label>
-            <input type="text" id="team" name="team"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+      <h3 class="text-xl font-semibold mb-4">Delete or Edit Player</h3>
+      <form class="space-y-4 bg-white p-4 rounded shadow">
+        <input class="block w-full p-2 border rounded" type="text" name="name" placeholder="Name">
+        <input class="block w-full p-2 border rounded" type="text" name="lastname" placeholder="Last Name">
+        <input class="block w-full p-2 border rounded" type="text" name="position" placeholder="Position">
+        <input class="block w-full p-2 border rounded" type="text" name="price" placeholder="Price">
+        <input class="block w-full p-2 border rounded" type="text" name="team" placeholder="Team">
+        <input class="bg-red-600 text-white py-2 px-4 rounded cursor-pointer hover:bg-red-700" type="submit" value="Submit">
+      </form>
     </div>
 
     <div>
-        <h3>Sell Player</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname"><br><br>
-            <label for="position">Position:</label>
-            <input type="text" id="position" name="position"><br><br>
-            <label for="price">Price:</label>
-            <input type="text" id="price" name="price"><br><br>
-            <label for="team">Team:</label>
-            <input type="text" id="team" name="team"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+      <h3 class="text-xl font-semibold mb-4">Buy Player</h3>
+      <form class="space-y-4 bg-white p-4 rounded shadow">
+        <input class="block w-full p-2 border rounded" type="text" name="name" placeholder="Name">
+        <input class="block w-full p-2 border rounded" type="text" name="lastname" placeholder="Last Name">
+        <input class="block w-full p-2 border rounded" type="text" name="position" placeholder="Position">
+        <input class="block w-full p-2 border rounded" type="text" name="price" placeholder="Price">
+        <input class="block w-full p-2 border rounded" type="text" name="team" placeholder="Team">
+        <input class="bg-green-600 text-white py-2 px-4 rounded cursor-pointer hover:bg-green-700" type="submit" value="Submit">
+      </form>
     </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Sell Player</h3>
+      <form class="space-y-4 bg-white p-4 rounded shadow">
+        <input class="block w-full p-2 border rounded" type="text" name="name" placeholder="Name">
+        <input class="block w-full p-2 border rounded" type="text" name="lastname" placeholder="Last Name">
+        <input class="block w-full p-2 border rounded" type="text" name="position" placeholder="Position">
+        <input class="block w-full p-2 border rounded" type="text" name="price" placeholder="Price">
+        <input class="block w-full p-2 border rounded" type="text" name="team" placeholder="Team">
+        <input class="bg-yellow-600 text-white py-2 px-4 rounded cursor-pointer hover:bg-yellow-700" type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
 </body>
 </html>
