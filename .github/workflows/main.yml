@@ -14,10 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Run player service tests via Makefile
+        working-directory: ./Player_service
+        run: make test
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Run buy player service tests via Makefile
+        working-directory: ./Buy_player_serivce
+        run: make test
+
+      - name: Run sell player service tests via Makefile
+        working-directory: ./Sell_player_service
+        run: make test
