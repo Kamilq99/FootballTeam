@@ -1,0 +1,7 @@
+version: '3.0'
+
+services:
+  cassandra:
+    build: ./Cassandra
+    ports:
+      - "9042:9042"

@@ -1,3 +1,13 @@
+ALTER USER cassandra WITH PASSWORD "test1234";
+
+CREATE KEYSPACE IF NOT EXISTS football_team
+WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+CREATE USER app WITH PASSWORD "test321" NOSUPERUSER;
+GRANT ALL PERMISSIONS ON KEYSPACE football_team TO app;
+
+USE football_team;
+
 CREATE TABLE IF NOT EXISTS actual_team (
   nr INT PRIMARY KEY,
   name TEXT,
